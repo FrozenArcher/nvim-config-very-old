@@ -1,6 +1,9 @@
 local vim = vim
 local option = { noremap = true, silent = true}
 
+-- NeoVim
+vim.api.nvim_set_keymap('n', '<A-s>', ':source % <CR>', option)
+
 -- NvimTree
 vim.api.nvim_set_keymap('n', '<A-n>', ':NvimTreeToggle<CR>', option)
 vim.api.nvim_set_keymap('n', '<A-m>', ':NvimTreeFocus<CR>', option)

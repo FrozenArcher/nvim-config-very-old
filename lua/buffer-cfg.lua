@@ -54,7 +54,7 @@ require('bufferline').setup {
         return true
       end
     end,
-    offsets = {{filetype = "NvimTree", text = "File Explorer", text_align = "center"}},
+    offsets = {{filetype = "NvimTree", text = "NvimTree", text_align = "center"}},
     color_icons = true, -- whether or not to add the filetype icon highlights
     show_buffer_icons = true, -- disable filetype icons for buffers
     show_buffer_close_icons = false,
@@ -64,7 +64,7 @@ require('bufferline').setup {
     persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
     -- can also be a table containing 2 custom separators
     -- [focused and unfocused]. eg: { '|', '|' }
-    separator_style = "slant",
+    separator_style = "thin",
     enforce_regular_tabs = false,
     always_show_bufferline = true,
     sort_by = 'insert_after_current'  
