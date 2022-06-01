@@ -16,7 +16,7 @@ local lsp_name = {
 		return msg
 	end,
 	icon = " LSP:",
-	color = { fg = "#ffffff", gui = "bold" },
+	color = { fg = "#aaaaff", gui = "bold" },
 }
 
 require("lualine").setup({
@@ -27,7 +27,7 @@ require("lualine").setup({
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = {},
 		always_divide_middle = true,
-		globalstatus = false,
+		globalstatus = true,
 	},
 	sections = {
 		lualine_a = { "mode" },
