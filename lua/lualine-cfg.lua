@@ -15,7 +15,7 @@ local lsp_name = {
 		end
 		return msg
 	end,
-	icon = " LSP:",
+	icon = " ",
 	color = { fg = "#aaaaff", gui = "bold" },
 }
 
@@ -32,9 +32,9 @@ require("lualine").setup({
 	sections = {
 		lualine_a = { "mode" },
 		lualine_b = { "branch", "diff" },
-		lualine_c = { lsp_name, "diagnostics" },
-		lualine_x = { "encoding", "fileformat", "filetype" },
-		lualine_y = { "progress" },
+		lualine_c = {   },
+		lualine_x = { "diagnostics", lsp_name },
+		lualine_y = { "encoding", "fileformat" },
 		lualine_z = { "location" },
 	},
 	inactive_sections = {
