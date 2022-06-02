@@ -5,4 +5,6 @@ require("config.lualine-cfg")
 require("config.sitter-cfg")
 require("config.scroll-cfg")
 
+require('gitsigns').setup()
+
 vim.cmd("colorscheme tokyonight")

@@ -1,8 +1,12 @@
 local vim = vim
+
+-- the gps module
 local gps = require("nvim-gps")
 local gps_msg = {
     gps.get_location, cond = gps.is_available
 }
+
+-- lsp client name module
 local lsp_name = {
 	function()
 		local msg = "No Active Lsp"

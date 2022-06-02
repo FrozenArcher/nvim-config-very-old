@@ -11,4 +11,6 @@ return require("packer").startup(function(use)
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use {"petertriho/nvim-scrollbar"}
     use { "SmiteshP/nvim-gps", requires = "nvim-treesitter/nvim-treesitter"}
+
+    use { 'lewis6991/gitsigns.nvim' }
 end)
