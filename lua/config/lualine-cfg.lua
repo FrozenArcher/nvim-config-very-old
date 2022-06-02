@@ -1,4 +1,8 @@
 local vim = vim
+local gps = require("nvim-gps")
+local gps_msg = {
+    gps.get_location, cond = gps.is_available
+}
 local lsp_name = {
 	function()
 		local msg = "No Active Lsp"
@@ -32,7 +36,7 @@ require("lualine").setup({
 	sections = {
 		lualine_a = { "mode" },
 		lualine_b = { "branch", "diff" },
-		lualine_c = {   },
+		lualine_c = { gps_msg },
 		lualine_x = { "diagnostics", lsp_name },
 		lualine_y = { "encoding", "fileformat" },
 		lualine_z = { "location" },

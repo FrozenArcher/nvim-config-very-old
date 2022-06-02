@@ -6,7 +6,7 @@ local function nmap(key, command, opts)
 end
 
 -- Start COQ
-nmap("<A-q>", ":COQnow", {noremap = true})
+nmap("<A-a>", ":COQnow", {noremap = true})
 
 -- LSP config
 require("lsp-map")

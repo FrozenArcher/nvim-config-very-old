@@ -10,4 +10,5 @@ return require("packer").startup(function(use)
     use "ms-jpq/coq_nvim"
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use {"petertriho/nvim-scrollbar"}
+    use { "SmiteshP/nvim-gps", requires = "nvim-treesitter/nvim-treesitter"}
 end)
