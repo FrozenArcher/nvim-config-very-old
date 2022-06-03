@@ -6,7 +6,7 @@ local servers = {
 	"clangd",
 	"gopls",
 	"sumneko_lua",
-    "vimls",
+	"vimls",
 }
 
 -- Mappings.
@@ -51,16 +51,14 @@ end
 -- map buffer local keybindings when the language server attaches
 
 -- COQ intergration
-local coq = require"coq"
+local coq = require("coq")
 
 for _, lsp in pairs(servers) do
-	require("lspconfig")[lsp].setup(
-        coq.lsp_ensure_capabilities({
-		    on_attach = on_attach,
-		    flags = {
-			    -- This will be the default in neovim 0.7+
-			    debounce_text_changes = 150,
-		    },
-	    })
-    )
+	require("lspconfig")[lsp].setup(coq.lsp_ensure_capabilities({
+		on_attach = on_attach,
+		flags = {
+			-- This will be the default in neovim 0.7+
+			debounce_text_changes = 150,
+		},
+	}))
 end

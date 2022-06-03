@@ -10,3 +10,9 @@ lua require"plugins"
 lua require"config"
 " Key mappings
 lua require"mappings"
+
+" formatter autogroup
+augroup FormatAutogroup
+  autocmd!
+  autocmd BufWritePost * FormatWrite
+augroup END
