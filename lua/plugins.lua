@@ -10,17 +10,17 @@ return require("packer").startup(function(use)
 	-- Auto complete
 	use("ms-jpq/coq_nvim")
 	-- file formatter
-	use({ "mhartington/formatter.nvim" })
+	use("mhartington/formatter.nvim")
 
 	-- View
 	-- File explorer
-	use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
+	use("kyazdani42/nvim-tree.lua")
 	-- Buffer line
-	use({ "akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons" })
+	use({ "akinsho/bufferline.nvim", tag = "v2.*" })
 	-- Statusline
-	use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true } })
+	use("nvim-lualine/lualine.nvim")
 	-- Side bar
-	use({ "petertriho/nvim-scrollbar" })
+	use("petertriho/nvim-scrollbar")
 
 	-- Looking
 	-- Colorscheme
@@ -30,7 +30,7 @@ return require("packer").startup(function(use)
 
 	-- Components
 	-- gps
-	use({ "SmiteshP/nvim-gps", requires = "nvim-treesitter/nvim-treesitter" })
+	use("SmiteshP/nvim-gps")
 	-- git indicator
-	use({ "lewis6991/gitsigns.nvim" })
+	use("lewis6991/gitsigns.nvim")
 end)
