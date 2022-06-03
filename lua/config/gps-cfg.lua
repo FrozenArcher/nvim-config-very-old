@@ -1,3 +1,3 @@
 require("nvim-gps").setup {
-    depth = 3,
+    depth = 1,
 }
