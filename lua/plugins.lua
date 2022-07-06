@@ -9,6 +9,7 @@ return require("packer").startup(function(use)
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	-- Auto complete
 	use("ms-jpq/coq_nvim")
+    use("ms-jpq/coq.artifacts")
 	-- file formatter
 	use("mhartington/formatter.nvim")
 
